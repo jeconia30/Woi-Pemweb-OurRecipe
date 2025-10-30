@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Feed - CookConnect</title>
+
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body class="loggedin-body">
+    <header class="main-header">
+      <nav class="navbar">
+        <div class="logo">CookConnect</div>
+
+        <div class="user-actions">
+          <a href="#notifications" class="action-icon notification-button">
+            <i class="fas fa-bell"></i>
+          </a>
+
+          <div class="profile-dropdown-wrapper">
+            <a href="#profile" class="profile-link">
+              <div class="profile-pic"></div>
+            </a>
+            <div class="profile-dropdown-menu">
+              <a href="my-profile.html">Lihat Profil</a>
+              <a href="index.html">Logout</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="feed-container container">
+      <aside class="feed-sidebar">
+        <a
+          href="create-recipe.html"
+          class="cta-button post-button full-width-button"
+        >
+          <i class="fas fa-plus"></i> Buat Resep Baru
+        </a>
+
+        <div class="trending-section">
+          <h4><i class="fas fa-fire"></i> Trending Recipes</h4>
+          <ul class="trending-list">
+            <li>
+              <a href="#">
+                <img
+                  src="src/rendang.jpeg"
+                  alt="Rendang"
+                  class="trending-img"
+                />
+                <div class="trending-text">
+                  <span class="trending-title">#RendangViral</span>
+                  <span class="trending-likes"
+                    ><i class="fas fa-heart"></i> 12.4K</span
+                  >
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="src/geprek.jpeg"
+                  alt="Ayam Geprek"
+                  class="trending-img"
+                />
+                <div class="trending-text">
+                  <span class="trending-title">#AyamGeprekLevelPedas</span>
+                  <span class="trending-likes"
+                    ><i class="fas fa-heart"></i> 8.1K</span
+                  >
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="src/brownies.jpeg"
+                  alt="Brownies"
+                  class="trending-img"
+                />
+                <div class="trending-text">
+                  <span class="trending-title">#BrowniesLumer</span>
+                  <span class="trending-likes"
+                    ><i class="fas fa-heart"></i> 5.9K</span
+                  >
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="src/nasgor.jpeg"
+                  alt="Nasi Goreng"
+                  class="trending-img"
+                />
+                <div class="trending-text">
+                  <span class="trending-title">#NasiGorengKampung</span>
+                  <span class="trending-likes"
+                    ><i class="fas fa-heart"></i> 4.5K</span
+                  >
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="src/dessert.jpeg"
+                  alt="Dessert Box"
+                  class="trending-img"
+                />
+                <div class="trending-text">
+                  <span class="trending-title">#DessertBoxKekinian</span>
+                  <span class="trending-likes"
+                    ><i class="fas fa-heart"></i> 3.2K</span
+                  >
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <section class="feed-main">
+        <div class="recipe-feed-area">
+          <article class="feed-post-card">
+            <a href="recipe-detail.html" class="full-card-link-overlay"></a>
+
+            <div class="post-header revised">
+              <a href="profile.html">
+                <div class="profile-pic-small"></div>
+              </a>
+              <div class="user-details-column">
+                <div class="user-details-top">
+                  <a href="profile.html">
+                    <strong>Sari (Contoh)</strong>
+                  </a>
+                  <a href="profile.html">
+                    <span class="username">@sari_masak</span>
+                  </a>
+                  <span class="dot-separator">•</span>
+                  <button class="follow-button follow small">Ikuti</button>
+                </div>
+                <span class="post-meta">2 jam lalu</span>
+              </div>
+            </div>
+
+            <div class="post-content revised">
+              <div class="post-main-content revised">
+                <div class="text-content-wrapper">
+                  <div class="recipe-steps">
+                    <h4>Ayam Geprek Sambal Matah</h4>
+                    <ol>
+                      <li>Ulek kasar cabai & bawang.</li>
+                      <li>Iris sereh & daun jeruk, campur.</li>
+                      <li>Siram minyak panas. Aduk rata.</li>
+                      <li>Geprek ayam, sajikan dengan sambal.</li>
+                    </ol>
+                  </div>
+                  <p class="post-caption">
+                    Ini dia resep ayam geprek andalanku! Resep cocok buat orang
+                    yang malas masak! Hanya butuh 15 menit, pedasnya nagih!
+                    <a href="#search-geprek" class="hashtag-link"
+                      >#ayamgeprek</a
+                    >
+                    <a href="#search-matah" class="hashtag-link"
+                      >#sambalmatah</a
+                    >
+                    <a href="#search-cepat" class="hashtag-link">#masakcepat</a>
+                  </p>
+                </div>
+
+                <img
+                  src="src/geprek.jpeg"
+                  alt="Ayam Geprek"
+                  class="post-image-aside"
+                />
+              </div>
+            </div>
+
+            <div class="post-actions">
+              <button><i class="far fa-heart"></i> 8.1K Suka</button>
+              <a href="recipe-detail.html#comments-section">
+                <i class="far fa-comment"></i> 120 Komentar
+              </a>
+              <button><i class="far fa-share-square"></i> Bagikan</button>
+              <button><i class="far fa-bookmark"></i> Simpan</button>
+            </div>
+          </article>
+
+          <article class="feed-post-card">
+            <div class="post-header revised">
+              <div class="profile-pic-small"></div>
+              <div class="user-details-column">
+                <div class="user-details-top">
+                  <strong>Budi (Contoh)</strong>
+                  <span class="username">@budi_rendang</span>
+                  <span class="dot-separator">•</span>
+                  <button class="follow-button following small">
+                    Mengikuti
+                  </button>
+                </div>
+                <span class="post-meta">5 jam lalu</span>
+              </div>
+            </div>
+
+            <div class="post-content revised">
+              <div class="post-main-content revised">
+                <div class="text-content-wrapper">
+                  <div class="recipe-steps">
+                    <h4>Rendang Padang Klasik</h4>
+                    <ol>
+                      <li>Tumis bumbu halus hingga harum.</li>
+                      <li>Masukkan daging, aduk hingga berubah warna.</li>
+                      <li>Tuang santan, masak lama dengan api kecil.</li>
+                      <li>
+                        Aduk sesekali hingga santan mengering & bumbu meresap.
+                      </li>
+                    </ol>
+                  </div>
+                  <p class="post-caption">
+                    Resep fancy restoran! Rugi kalau ga cobain, rahasia bumbu
+                    leluhur terkuak di sini! Butuh kesabaran tapi hasilnya
+                    mantap jiwa. #rendang #padang #masakanindonesia
+                  </p>
+                </div>
+
+                <img
+                  src="src/rendang.jpeg"
+                  alt="Rendang Padang"
+                  class="post-image-aside"
+                />
+              </div>
+            </div>
+
+            <div class="post-actions">
+              <button><i class="far fa-heart"></i> 12.4K Suka</button>
+              <button><i class="far fa-comment"></i> 350 Komentar</button>
+              <button><i class="far fa-share-square"></i> Bagikan</button>
+              <button><i class="far fa-bookmark"></i> Simpan</button>
+            </div>
+          </article>
+
+          <article class="feed-post-card">
+            <div class="post-header revised">
+              <div class="profile-pic-small"></div>
+              <div class="user-details-column">
+                <div class="user-details-top">
+                  <strong>Chef Yuni (Contoh)</strong>
+                  <span class="username">@chef_yuni</span>
+                  <span class="dot-separator">•</span>
+                  <button class="follow-button following small">
+                    Mengikuti
+                  </button>
+                </div>
+                <span class="post-meta">8 jam lalu</span>
+              </div>
+            </div>
+
+            <div class="post-content revised">
+              <div class="post-main-content revised">
+                <div class="text-content-wrapper">
+                  <div class="recipe-steps">
+                    <h4>Brownies Kukus 3 Bahan</h4>
+                    <ol>
+                      <li>Kocok telur & gula hingga larut.</li>
+                      <li>Masukkan bubuk coklat & terigu, aduk.</li>
+                      <li>Tambah minyak/margarin cair.</li>
+                      <li>Kukus 30 menit, angkat & sajikan.</li>
+                    </ol>
+                  </div>
+                  <p class="post-caption">
+                    Pemula harus cobain biar skillnya meningkat! Dessert viral
+                    yang pasti berhasil. #brownies #dessert #masakmudah
+                  </p>
+                </div>
+                <img
+                  src="src/brownies.jpeg"
+                  alt="Brownies Kukus"
+                  class="post-image-aside"
+                />
+              </div>
+            </div>
+
+            <div class="post-actions">
+              <button><i class="far fa-heart"></i> 5.9K Suka</button>
+              <button><i class="far fa-comment"></i> 90 Komentar</button>
+              <button><i class="far fa-share-square"></i> Bagikan</button>
+              <button><i class="far fa-bookmark"></i> Simpan</button>
+            </div>
+          </article>
+
+          <article class="feed-post-card">
+            <div class="post-header revised">
+              <div class="profile-pic-small"></div>
+              <div class="user-details-column">
+                <div class="user-details-top">
+                  <strong>Pak RT (Contoh)</strong>
+                  <span class="username">@nasgor_bang_rt</span>
+                  <span class="dot-separator">•</span>
+                  <button class="follow-button follow small">Ikuti</button>
+                </div>
+                <span class="post-meta">1 hari lalu</span>
+              </div>
+            </div>
+
+            <div class="post-content revised">
+              <div class="post-main-content revised">
+                <div class="text-content-wrapper">
+                  <div class="recipe-steps">
+                    <h4>Nasi Goreng Kampung Spesial</h4>
+                    <ol>
+                      <li>Tumis bumbu halus (bawang, cabai).</li>
+                      <li>Masukkan telur, orak-arik.</li>
+                      <li>Masukkan nasi & kecap manis.</li>
+                      <li>Aduk rata, tambahkan garam & penyedap.</li>
+                    </ol>
+                  </div>
+                  <p class="post-caption">
+                    Nasi goreng andalan bapak-bapak komplek. Rahasianya di api
+                    besar! #nasigoreng #nasgorkampung #sarapan
+                  </p>
+                </div>
+                <img
+                  src="src/nasgor.jpeg"
+                  alt="Nasi Goreng Kampung"
+                  class="post-image-aside"
+                />
+              </div>
+            </div>
+
+            <div class="post-actions">
+              <button><i class="far fa-heart"></i> 4.5K Suka</button>
+              <button><i class="far fa-comment"></i> 75 Komentar</button>
+              <button><i class="far fa-share-square"></i> Bagikan</button>
+              <button><i class="far fa-bookmark"></i> Simpan</button>
+            </div>
+          </article>
+
+          <article class="feed-post-card">
+            <div class="post-header revised">
+              <div class="profile-pic-small"></div>
+              <div class="user-details-column">
+                <div class="user-details-top">
+                  <strong>Mama Ina (Contoh)</strong>
+                  <span class="username">@dapur_ina</span>
+                  <span class="dot-separator">•</span>
+                  <button class="follow-button follow small">Ikuti</button>
+                </div>
+                <span class="post-meta">2 hari lalu</span>
+              </div>
+            </div>
+
+            <div class="post-content revised">
+              <div class="post-main-content revised">
+                <div class="text-content-wrapper">
+                  <div class="recipe-steps">
+                    <h4>Soto Ayam Lamongan</h4>
+                    <ol>
+                      <li>Rebus ayam dengan bumbu (sereh, jahe).</li>
+                      <li>Angkat ayam, suwir-suwir.</li>
+                      <li>Tumis bumbu halus (kunyit, bawang).</li>
+                      <li>Masukkan tumisan ke kuah kaldu.</li>
+                    </ol>
+                  </div>
+                  <p class="post-caption">
+                    Hujan-hujan enaknya makan soto. Kuahnya segar banget, resep
+                    warisan keluarga! #sotoayam #sotolamongan #resepkuah
+                  </p>
+                </div>
+                <img
+                  src="src/soto.jpeg"
+                  alt="Soto Ayam Lamongan"
+                  class="post-image-aside"
+                />
+              </div>
+            </div>
+
+            <div class="post-actions">
+              <button><i class="far fa-heart"></i> 6.2K Suka</button>
+              <button><i class="far fa-comment"></i> 110 Komentar</button>
+              <button><i class="far fa-share-square"></i> Bagikan</button>
+              <button><i class="far fa-bookmark"></i> Simpan</button>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <div class="modal-overlay" id="unfollow-modal">
+      <div class="modal-content">
+        <p>
+          Apakah yakin mau berhenti mengikuti
+          <strong id="modal-message-username">@username</strong>?
+        </p>
+        <div class="modal-actions">
+          <button class="cta-button modal-button" id="modal-btn-batal">
+            Batal
+          </button>
+          <button
+            class="cta-button modal-button button-danger"
+            id="modal-btn-ya"
+          >
+            Ya, Berhenti
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="toast-notification" id="copy-toast">
+      <i class="fas fa-check-circle"></i>
+      <span id="toast-message">Link resep disalin ke clipboard!</span>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 CookConnect. Developed for Web Programming Class.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lengkapi Profil Anda - CookConnect</title>
+
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="auth.css" />
+  </head>
+  <body class="login-page-body">
+    <header class="login-header">
+      <div class="container">
+        <div class="logo">CookConnect</div>
+      </div>
+    </header>
+
+    <div class="login-container profile-setup-container">
+      <a href="login.html" class="back-button">
+        <i class="fas fa-arrow-left"></i>
+      </a>
+
+      <form id="setup-form" class="auth-form">
+        <h2 class="profile-setup-title">Lengkapi Profil Anda</h2>
+
+        <div class="profile-pic-upload-area">
+          <div class="profile-pic-large profile-placeholder"></div>
+          <label for="profile-pic" class="change-pic-button">
+            <i class="fas fa-camera"></i> Ubah Foto Profil
+            <input
+              type="file"
+              id="profile-pic"
+              accept="image/*"
+              class="hidden-file-input"
+            />
+          </label>
+        </div>
+
+        <div class="form-group">
+          <label for="name">Nama</label>
+          <input type="text" id="name" placeholder="Nama Lengkap Anda" />
+        </div>
+
+        <div class="form-group">
+          <label for="username">Username *</label>
+          <input
+            type="text"
+            id="username"
+            placeholder="cth: chefbudi_123"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="pronouns">Kata Ganti</label>
+          <input type="text" id="pronouns" placeholder="cth: dia/mereka" />
+        </div>
+
+        <div class="form-group">
+          <label for="bio">Bio Singkat</label>
+          <textarea
+            id="bio"
+            rows="3"
+            placeholder="Ceritakan sedikit tentang diri Anda..."
+          ></textarea>
+        </div>
+
+        <div class="form-group social-links-group">
+          <label>Tambahkan Tautan (Opsional)</label>
+
+          <div class="social-input-wrapper">
+            <i class="fab fa-tiktok"></i>
+            <input
+              type="url"
+              id="link-tiktok"
+              placeholder="Link profil TikTok Anda"
+            />
+          </div>
+
+          <div class="social-input-wrapper">
+            <i class="fab fa-instagram"></i>
+            <input
+              type="url"
+              id="link-instagram"
+              placeholder="Link profil Instagram Anda"
+            />
+          </div>
+
+          <div class="social-input-wrapper">
+            <i class="fab fa-linkedin"></i>
+            <input
+              type="url"
+              id="link-linkedin"
+              placeholder="Link profil LinkedIn Anda"
+            />
+          </div>
+
+          <div class="social-input-wrapper">
+            <i class="fas fa-link"></i>
+            <input
+              type="url"
+              id="link-other"
+              placeholder="Link lainnya (website, dll.)"
+            />
+          </div>
+        </div>
+
+        <a href="feed.html" class="cta-button auth-button">
+          Simpan Profil & Mulai
+        </a>
+      </form>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 CookConnect. Developed for Web Programming Class.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

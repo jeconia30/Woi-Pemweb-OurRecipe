@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profil Sari (Contoh) - CookConnect</title>
+
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body class="loggedin-body">
+    <header class="main-header">
+      <nav class="navbar">
+        <a href="feed.html" class="logo-link">
+          <div class="logo">CookConnect</div>
+        </a>
+        <div class="user-actions">
+          <a href="#notifications" class="action-icon notification-button">
+            <i class="fas fa-bell"></i>
+          </a>
+          <div class="profile-dropdown-wrapper">
+            <a href="profile.html" class="profile-link">
+              <div class="profile-pic"></div>
+            </a>
+            <div class="profile-dropdown-menu">
+              <a href="my-profile.html">Lihat Profil</a>
+              <a href="index.html">Logout</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="feed-container container">
+      <aside class="feed-sidebar">
+        <a
+          href="create-recipe.html"
+          class="cta-button post-button full-width-button"
+        >
+          <i class="fas fa-plus"></i> Buat Resep Baru
+        </a>
+        <div class="trending-section">
+          <h4><i class="fas fa-fire"></i> Trending Recipes</h4>
+          <ul class="trending-list">
+            <li>
+              <a href="#">
+                <img
+                  src="src/rendang.jpeg"
+                  alt="Rendang"
+                  class="trending-img"
+                />
+                <div class="trending-text">
+                  <span class="trending-title">#RendangViral</span>
+                  <span class="trending-likes"
+                    ><i class="fas fa-heart"></i> 12.4K</span
+                  >
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="src/geprek.jpeg"
+                  alt="Ayam Geprek"
+                  class="trending-img"
+                />
+                <div class="trending-text">
+                  <span class="trending-title">#AyamGeprekLevelPedas</span>
+                  <span class="trending-likes"
+                    ><i class="fas fa-heart"></i> 8.1K</span
+                  >
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="src/brownies.jpeg"
+                  alt="Brownies"
+                  class="trending-img"
+                />
+                <div class="trending-text">
+                  <span class="trending-title">#BrowniesLumer</span>
+                  <span class="trending-likes"
+                    ><i class="fas fa-heart"></i> 5.9K</span
+                  >
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="src/nasgor.jpeg"
+                  alt="Nasi Goreng"
+                  class="trending-img"
+                />
+                <div class="trending-text">
+                  <span class="trending-title">#NasiGorengKampung</span>
+                  <span class="trending-likes"
+                    ><i class="fas fa-heart"></i> 4.5K</span
+                  >
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="src/dessert.jpeg"
+                  alt="Dessert Box"
+                  class="trending-img"
+                />
+                <div class="trending-text">
+                  <span class="trending-title">#DessertBoxKekinian</span>
+                  <span class="trending-likes"
+                    ><i class="fas fa-heart"></i> 3.2K</span
+                  >
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <section class="profile-main">
+        <div class="profile-header-container">
+          <div class="profile-top-bar">
+            <button class="back-button" onclick="history.back()">
+              <i class="fas fa-arrow-left"></i>
+            </button>
+            <div class="profile-top-bar-title">
+              <strong>Profil</strong>
+              <span>@sari_masak</span>
+            </div>
+          </div>
+          <div class="profile-cover-photo"></div>
+
+          <div class="profile-details">
+            <div class="profile-pic-large"></div>
+            <div class="profile-user-info">
+              <div class="profile-name-line">
+                <h2>Sari (Contoh)</h2>
+                <div class="profile-stats-inline">
+                  <strong>1.200</strong> <span>Pengikut</span>
+                </div>
+              </div>
+              <span>@sari_masak</span>
+            </div>
+            <button
+              class="cta-button follow-button follow"
+              id="profile-action-button"
+            >
+              Ikuti
+            </button>
+          </div>
+
+          <div class="profile-bio">
+            <p>
+              Hobi masak simpel yang enak! Ibu dari 2 anak. Suka berbagi resep
+              harian anti-gagal.
+            </p>
+          </div>
+          <div class="profile-links">
+            <a href="#" class="profile-link-item" target="_blank">
+              <i class="fab fa-tiktok"></i>
+              <span>TikTok</span>
+            </a>
+            <a href="#" class="profile-link-item" target="_blank">
+              <i class="fab fa-instagram"></i>
+              <span>Instagram</span>
+            </a>
+            <a href="#" class="profile-link-item" target="_blank">
+              <i class="fab fa-linkedin"></i>
+              <span>LinkedIn</span>
+            </a>
+            <a href="#" class="profile-link-item" target="_blank">
+              <i class="fas fa-link"></i>
+              <span>Website</span>
+            </a>
+          </div>
+          <div class="profile-tabs">
+            <a href="#" class="tab-item active">
+              <i class="fas fa-book-open"></i> Resep
+            </a>
+          </div>
+        </div>
+
+        <div class="profile-recipe-grid">
+          <a href="recipe-detail.html" class="profile-recipe-card">
+            <img src="src/geprek.jpeg" alt="Ayam Geprek" />
+            <h4>Ayam Geprek Sambal Matah</h4>
+          </a>
+          <a href="#" class="profile-recipe-card">
+            <img src="src/soto.jpeg" alt="Soto Ayam" />
+            <h4>Soto Ayam Lamongan</h4>
+          </a>
+          <a href="#" class="profile-recipe-card">
+            <img src="src/nasgor.jpeg" alt="Nasi Goreng" />
+            <h4>Nasi Goreng Kampung</h4>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 CookConnect. Developed for Web Programming Class.</p>
+    </footer>
+
+    <div class="modal-overlay" id="unfollow-modal">
+      <div class="modal-content">
+        <p>
+          Apakah yakin mau berhenti mengikuti
+          <strong id="modal-message-username">@username</strong>?
+        </p>
+        <div class="modal-actions">
+          <button class="cta-button modal-button" id="modal-btn-batal">
+            Batal
+          </button>
+          <button
+            class="cta-button modal-button button-danger"
+            id="modal-btn-ya"
+          >
+            Ya, Berhenti
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="toast-notification" id="copy-toast">
+      <i class="fas fa-check-circle"></i>
+      <span id="toast-message">Link resep disalin ke clipboard!</span>
+    </div>
+
+    <script src="global.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

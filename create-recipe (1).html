@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buat Resep Baru - CookConnect</title>
+
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="create-recipe.css" />
+  </head>
+  <body class="loggedin-body">
+    <header class="main-header">
+      <nav class="navbar">
+        <a href="feed.html" class="logo-link">
+          <div class="logo">CookConnect</div>
+        </a>
+        <div class="user-actions">
+          <a href="#notifications" class="action-icon notification-button">
+            <i class="fas fa-bell"></i>
+          </a>
+          <div class="profile-dropdown-wrapper">
+            <a href="my-profile.html" class="profile-link">
+              <div class="profile-pic"></div>
+            </a>
+            <div class="profile-dropdown-menu">
+              <a href="my-profile.html">Lihat Profil</a>
+              <a href="index.html">Logout</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <div class="create-recipe-container">
+        <form action="feed.html" method="POST">
+          <div class="form-header">
+            <div class="recipe-title-group">
+              <button class="back-button" onclick="history.back()">
+                <i class="fas fa-arrow-left"></i>
+              </button>
+              <h1>Buat Resep Baru Anda</h1>
+            </div>
+            <p>
+              Bagikan resep terbaik Anda kepada dunia dan inspirasi para
+              CookConnectors lainnya!
+            </p>
+          </div>
+
+          <div class="form-section">
+            <h2>Foto Utama Resep</h2>
+            <label for="recipe-photo-upload" class="upload-box">
+              <i class="fas fa-camera"></i>
+              <span>Klik untuk mengunggah foto (cth: .jpg, .png)</span>
+            </label>
+            <input
+              type="file"
+              id="recipe-photo-upload"
+              class="hidden-file-input"
+              accept="image/*"
+            />
+          </div>
+
+          <div class="form-section">
+            <div class="form-group">
+              <label for="recipe-title">Judul Resep *</label>
+              <input
+                type="text"
+                id="recipe-title"
+                placeholder="Cth: Ayam Geprek Sambal Matah"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="recipe-caption">Deskripsi Singkat (Caption)</label>
+              <textarea
+                id="recipe-caption"
+                rows="4"
+                placeholder="Cth: Resep andalan keluarga yang pedasnya nagih!"
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="form-section">
+            <h2>Detail Resep</h2>
+            <div class="form-group-flex">
+              <div class="form-group">
+                <label for="recipe-time">Total Waktu</label>
+                <input
+                  type="text"
+                  id="recipe-time"
+                  placeholder="Cth: 30 Menit"
+                />
+              </div>
+              <div class="form-group">
+                <label for="recipe-servings">Porsi</label>
+                <input
+                  type="text"
+                  id="recipe-servings"
+                  placeholder="Cth: 2 orang"
+                />
+              </div>
+              <div class="form-group">
+                <label for="recipe-difficulty">Kesulitan</label>
+                <select id="recipe-difficulty">
+                  <option value="Mudah">Mudah</option>
+                  <option value="Sedang">Sedang</option>
+                  <option value="Sulit">Sulit</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-section">
+            <label>Bahan-Bahan *</label>
+            <div id="ingredients-list" class="dynamic-input-list"></div>
+            <button
+              type="button"
+              class="cta-button button-secondary"
+              id="add-ingredient-btn"
+            >
+              <i class="fas fa-plus"></i> Tambah Bahan
+            </button>
+          </div>
+
+          <div class="form-section">
+            <label>Langkah-Langkah *</label>
+            <div id="steps-list" class="dynamic-input-list"></div>
+            <button
+              type="button"
+              class="cta-button button-secondary"
+              id="add-step-btn"
+            >
+              <i class="fas fa-plus"></i> Tambah Langkah
+            </button>
+          </div>
+
+          <div class="form-section">
+            <label>Link Video (Opsional)</label>
+
+            <div class="input-with-icon">
+              <i class="fab fa-youtube"></i>
+              <input
+                type="url"
+                id="recipe-video-youtube"
+                placeholder="Cth: https://youtube.com/watch?v=..."
+              />
+            </div>
+
+            <div class="input-with-icon">
+              <i class="fab fa-tiktok"></i>
+              <input
+                type="url"
+                id="recipe-video-tiktok"
+                placeholder="Cth: https://tiktok.com/@username/video/..."
+              />
+            </div>
+
+            <div class="input-with-icon">
+              <i class="fab fa-instagram"></i>
+              <input
+                type="url"
+                id="recipe-video-instagram"
+                placeholder="Cth: https://instagram.com/p/..."
+              />
+            </div>
+          </div>
+
+          <div class="form-actions">
+            <a href="feed.html" class="cta-button button-secondary">Batal</a>
+            <button type="submit" class="cta-button">Terbitkan Resep</button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 CookConnect. Developed for Web Programming Class.</p>
+    </footer>
+
+    <script src="global.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

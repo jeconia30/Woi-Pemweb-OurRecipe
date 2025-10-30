@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ayam Geprek Sambal Matah - CookConnect</title>
+
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body class="loggedin-body">
+    <header class="main-header">
+      <nav class="navbar">
+        <a href="feed.html" class="logo-link">
+          <div class="logo">CookConnect</div>
+        </a>
+
+        <div class="user-actions">
+          <a href="#notifications" class="action-icon notification-button">
+            <i class="fas fa-bell"></i>
+          </a>
+
+          <div class="profile-dropdown-wrapper">
+            <a href="#profile" class="profile-link">
+              <div class="profile-pic"></div>
+            </a>
+            <div class="profile-dropdown-menu">
+              <a href="my-profile.html">Lihat Profil</a>
+              <a href="index.html">Logout</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="feed-container container">
+      <aside class="feed-sidebar">
+        <a
+          href="create-recipe.html"
+          class="cta-button post-button full-width-button"
+        >
+          <i class="fas fa-plus"></i> Buat Resep Baru
+        </a>
+
+        <div class="trending-section">
+          <h4><i class="fas fa-fire"></i> Trending Recipes</h4>
+          <ul class="trending-list">
+            <li>
+              <a href="#">
+                <img
+                  src="src/rendang.jpeg"
+                  alt="Rendang"
+                  class="trending-img"
+                />
+                <div class="trending-text">
+                  <span class="trending-title">#RendangViral</span>
+                  <span class="trending-likes"
+                    ><i class="fas fa-heart"></i> 12.4K</span
+                  >
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="src/geprek.jpeg"
+                  alt="Ayam Geprek"
+                  class="trending-img"
+                />
+                <div class="trending-text">
+                  <span class="trending-title">#AyamGeprekLevelPedas</span>
+                  <span class="trending-likes"
+                    ><i class="fas fa-heart"></i> 8.1K</span
+                  >
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="src/brownies.jpeg"
+                  alt="Brownies"
+                  class="trending-img"
+                />
+                <div class="trending-text">
+                  <span class="trending-title">#BrowniesLumer</span>
+                  <span class="trending-likes"
+                    ><i class="fas fa-heart"></i> 5.9K</span
+                  >
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="src/nasgor.jpeg"
+                  alt="Nasi Goreng"
+                  class="trending-img"
+                />
+                <div class="trending-text">
+                  <span class="trending-title">#NasiGorengKampung</span>
+                  <span class="trending-likes"
+                    ><i class="fas fa-heart"></i> 4.5K</span
+                  >
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="src/dessert.jpeg"
+                  alt="Dessert Box"
+                  class="trending-img"
+                />
+                <div class="trending-text">
+                  <span class="trending-title">#DessertBoxKekinian</span>
+                  <span class="trending-likes"
+                    ><i class="fas fa-heart"></i> 3.2K</span
+                  >
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <div class="recipe-detail-container">
+        <div class="recipe-detail-header">
+          <div class="recipe-title-group">
+            <button class="back-button" onclick="history.back()">
+              <i class="fas fa-arrow-left"></i>
+            </button>
+            <h1 class="recipe-detail-title">Ayam Geprek Sambal Matah</h1>
+          </div>
+
+          <div class="post-header revised">
+            <a href="profile.html">
+              <div class="profile-pic-small"></div>
+            </a>
+            <div class="user-details-column">
+              <div class="user-details-top">
+                <a href="profile.html">
+                  <strong>Sari (Contoh)</strong>
+                </a>
+                <a href="profile.html">
+                  <span class="username">@sari_masak</span>
+                </a>
+                <span class="dot-separator">•</span>
+                <button class="follow-button follow small">Ikuti</button>
+              </div>
+              <span class="post-meta">Diposkan 2 jam lalu</span>
+            </div>
+          </div>
+        </div>
+
+        <img
+          src="src/geprek.jpeg"
+          alt="Ayam Geprek Sambal Matah"
+          class="recipe-hero-image"
+        />
+
+        <div class="post-actions detail-page-actions">
+          <button class="like-active">
+            <i class="fas fa-heart"></i> 8.1K Suka
+          </button>
+          <a href="#comments-section"
+            ><i class="far fa-comment"></i> 120 Komentar</a
+          >
+          <button><i class="far fa-share-square"></i> Bagikan</button>
+          <button class="save-active">
+            <i class="fas fa-bookmark"></i> Disimpan
+          </button>
+        </div>
+
+        <div class="recipe-caption-full">
+          <p>
+            Ini dia resep ayam geprek andalanku! Resep cocok buat orang yang
+            malas masak! Hanya butuh 15 menit, pedasnya nagih! #ayamgeprek
+            #sambalmatah #masakcepat
+          </p>
+        </div>
+
+        <div class="recipe-meta-info">
+          <div>
+            <i class="fas fa-clock"></i> <strong>Total Waktu:</strong> 15 Menit
+          </div>
+          <div>
+            <i class="fas fa-utensils"></i> <strong>Porsi:</strong> 2 orang
+          </div>
+          <div>
+            <i class="fas fa-star"></i> <strong>Kesulitan:</strong> Mudah
+          </div>
+        </div>
+
+        <div class="recipe-main-content-wrapper">
+          <div class="recipe-ingredients">
+            <h3><i class="fas fa-shopping-cart"></i> Bahan-Bahan</h3>
+            <ul>
+              <li>2 potong ayam goreng (tepung)</li>
+              <li>10 buah cabai rawit merah</li>
+              <li>5 siung bawang merah</li>
+              <li>2 batang sereh (ambil bagian putih)</li>
+              <li>4 lembar daun jeruk (buang tulang)</li>
+              <li>1/2 sdt terasi bakar</li>
+              <li>Garam dan gula secukupnya</li>
+              <li>5 sdm minyak kelapa panas</li>
+            </ul>
+          </div>
+
+          <div class="recipe-instructions">
+            <h3><i class="fas fa-list-ol"></i> Langkah-Langkah</h3>
+            <ol>
+              <li>
+                <strong>Siapkan Sambal:</strong> Ulek kasar cabai, bawang merah,
+                dan terasi. Jangan terlalu halus.
+              </li>
+              <li>
+                <strong>Iris Bumbu:</strong> Iris tipis sereh dan daun jeruk.
+                Campur ke dalam ulekan cabai.
+              </li>
+              <li>
+                <strong>Siram Minyak:</strong> Panaskan minyak kelapa (harus
+                sangat panas). Siramkan langsung ke atas campuran sambal. Aduk
+                rata.
+              </li>
+              <li>
+                <strong>Geprek Ayam:</strong> Ambil ayam goreng tepung yang
+                sudah siap, letakkan di atas cobek.
+              </li>
+              <li>
+                <strong>Sajikan:</strong> Geprek atau tekan ayam menggunakan
+                ulekan hingga sedikit hancur dan tercampur dengan sambal.
+                Sajikan segera dengan nasi hangat.
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="recipe-video-links">
+          <h3><i class="fas fa-video"></i> Tonton Video Resep</h3>
+          <ul class="video-link-list">
+            <li>
+              <a
+                href="https://tiktok.com/contoh"
+                target="_blank"
+                class="video-link-tiktok"
+              >
+                <i class="fab fa-tiktok"></i> Tonton di TikTok
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://youtube.com/contoh"
+                target="_blank"
+                class="video-link-youtube"
+              >
+                <i class="fab fa-youtube"></i> Tonton di YouTube
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://instagram.com/contoh"
+                target="_blank"
+                class="video-link-instagram"
+              >
+                <i class="fab fa-instagram"></i> Tonton di Instagram
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="comments-section" id="comments-section">
+          <h3><i class="fas fa-comments"></i> 10 Komentar</h3>
+
+          <form class="comment-form">
+            <div class="profile-pic-small"></div>
+            <textarea
+              placeholder="Tulis komentar Anda..."
+              font-family="inherit"
+            ></textarea>
+            <button type="submit" class="cta-button small">Kirim</button>
+          </form>
+
+          <div class="comment-list">
+            <div class="comment-item">
+              <div class="profile-pic-small"></div>
+              <div class="comment-content">
+                <strong>@budi_rendang</strong>
+                <p>Wah, keliatannya pedes banget! Jadi lapar!</p>
+                <div class="comment-meta">2 jam lalu</div>
+              </div>
+            </div>
+            <div class="comment-item">
+              <div class="profile-pic-small"></div>
+              <div class="comment-content">
+                <strong>@chef_yuni</strong>
+                <p>
+                  Tips: minyaknya harus beneran panas biar wangi serehnya
+                  keluar. Mantap resepnya!
+                </p>
+                <div class="comment-meta">1 jam lalu</div>
+              </div>
+            </div>
+            <div class="comment-item">
+              <div class="profile-pic-small"></div>
+              <div class="comment-content">
+                <strong>@dapur_ina</strong>
+                <p>
+                  Ini sambal matahnya disiram minyak panas biasa atau minyak
+                  kelapa, ya?
+                </p>
+                <div class="comment-meta">1 jam lalu</div>
+              </div>
+            </div>
+            <div class="comment-item">
+              <div class="profile-pic-small"></div>
+              <div class="comment-content">
+                <strong>@resep_simple</strong>
+                <p>Keliatannya gampang, weekend ini fix coba!</p>
+                <div class="comment-meta">55 menit lalu</div>
+              </div>
+            </div>
+            <div class="comment-item">
+              <div class="profile-pic-small"></div>
+              <div class="comment-content">
+                <strong>@sambal_lover</strong>
+                <p>Auto ngiler liat sambelnya... 🤤</p>
+                <div class="comment-meta">48 menit lalu</div>
+              </div>
+            </div>
+            <div class="comment-item">
+              <div class="profile-pic-small"></div>
+              <div class="comment-content">
+                <strong>@nasgor_bang_rt</strong>
+                <p>
+                  Mantap! Lebih nendang lagi kalau ayamnya digeprek beneran
+                  sampe ancur.
+                </p>
+                <div class="comment-meta">30 menit lalu</div>
+              </div>
+            </div>
+            <div class="comment-item">
+              <div class="profile-pic-small"></div>
+              <div class="comment-content">
+                <strong>@foodie_jakarta</strong>
+                <p>
+                  Udah recook! Enak banget, resepnya anti gagal. Thanks, Sari!
+                </p>
+                <div class="comment-meta">20 menit lalu</div>
+              </div>
+            </div>
+            <div class="comment-item">
+              <div class="profile-pic-small"></div>
+              <div class="comment-content">
+                <strong>@belajar_baking</strong>
+                <p>
+                  Walaupun biasanya baking, jadi pengen coba yang pedes-pedes
+                  hehe.
+                </p>
+                <div class="comment-meta">15 menit lalu</div>
+              </div>
+            </div>
+            <div class="comment-item">
+              <div class="profile-pic-small"></div>
+              <div class="comment-content">
+                <strong>@anak_kost_survive</strong>
+                <p>Bisa jadi menu andalan akhir bulan nih. Save dulu!</p>
+                <div class="comment-meta">10 menit lalu</div>
+              </div>
+            </div>
+            <div class="comment-item">
+              <div class="profile-pic-small"></div>
+              <div class="comment-content">
+                <strong>@mama_muda_masak</strong>
+                <p>Serehnya opsional gak ya? Anakku kurang suka.</p>
+                <div class="comment-meta">Baru saja</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 CookConnect. Developed for Web Programming Class.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

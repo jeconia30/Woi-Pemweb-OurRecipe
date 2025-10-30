@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CookConnect - Berbagi Resep Bergaya Sosial Media</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="navbar">
+        <div class="logo">CookConnect</div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#preview">Featured Recipes</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#team">Team</a></li>
+        </ul>
+        <a href="login.html" class="cta-button">Login / Register</a>
+      </nav>
+    </header>
+
+    <section id="home" class="hero-section container">
+      <div class="hero-text-content">
+        <h1>CookConnect:</h1>
+        <h2>Berbagi Resep Terbaik Anda</h2>
+        <p class="subtitle">
+          Temukan inspirasi memasak baru dan jalin koneksi dengan para pecinta
+          kuliner dari seluruh dunia, dalam platform sosial media resep yang
+          modern.
+        </p>
+      </div>
+      <div class="hero-illustration"></div>
+    </section>
+
+    <section id="preview" class="preview-section container">
+      <div class="recipe-grid">
+        <div class="recipe-card">
+          <img
+            src="src/rendang.jpeg"
+            alt="Gambar Rendang Padang Klasik"
+            class="recipe-image"
+          />
+          <div class="recipe-like-badge">
+            <i class="fas fa-heart icon-like"></i> 12.4K
+          </div>
+          <h4 class="recipe-title">Rendang Padang Klasik</h4>
+          <p class="recipe-meta">Oleh: Budi</p>
+          <p class="recipe-teaser">
+            "Resep *fancy* restoran! Rugi kalau ga cobain, rahasia bumbu leluhur
+            terkuak di sini!"
+          </p>
+          <a href="#" class="read-more">Lihat Detail &raquo;</a>
+        </div>
+
+        <div class="recipe-card">
+          <img
+            src="src/geprek.jpeg"
+            alt="Gambar Ayam Geprek Sambal Matah"
+            class="recipe-image"
+          />
+          <div class="recipe-like-badge">
+            <i class="fas fa-heart icon-like"></i> 8.1K
+          </div>
+          <h4 class="recipe-title">Ayam Geprek Sambal Matah</h4>
+          <p class="recipe-meta">Oleh: Sari</p>
+          <p class="recipe-teaser">
+            "Resep cocok buat orang yang malas masak! Hanya butuh 15 menit,
+            pedasnya nagih!"
+          </p>
+          <a href="#" class="read-more">Lihat Detail &raquo;</a>
+        </div>
+
+        <div class="recipe-card">
+          <img
+            src="src/brownies.jpeg"
+            alt="Gambar Brownies Kukus 3 Bahan"
+            class="recipe-image"
+          />
+          <div class="recipe-like-badge">
+            <i class="fas fa-heart icon-like"></i> 5.9K
+          </div>
+          <h4 class="recipe-title">Brownies Kukus 3 Bahan</h4>
+          <p class="recipe-meta">Oleh: Chef Yuni</p>
+          <p class="recipe-teaser">
+            "Pemula harus cobain biar *skill*nya meningkat! Dessert viral yang
+            pasti berhasil."
+          </p>
+          <a href="#" class="read-more">Lihat Detail &raquo;</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section container">
+      <div class="contact-layout">
+        <div class="contact-details">
+          <h2>We're Here to Help</h2>
+          <p class="contact-sub-text">
+            Punya pertanyaan, masukan, atau butuh bantuan? Tim kami siap
+            melayani Anda.
+          </p>
+
+          <div class="contact-info-block social-icons">
+            <a
+              href="https://wa.me/6281234567890"
+              target="_blank"
+              aria-label="WhatsApp CookConnect"
+            >
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a
+              href="https://instagram.com/CookConnect.id"
+              target="_blank"
+              aria-label="Instagram CookConnect"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a
+              href="https://tiktok.com/@CookConnect.id"
+              target="_blank"
+              aria-label="TikTok CookConnect"
+            >
+              <i class="fab fa-tiktok"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-container">
+          <form action="#" method="POST" class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="first-name">First Name *</label>
+                <input type="text" id="first-name" name="first-name" required />
+              </div>
+              <div class="form-group">
+                <label for="last-name">Last Name *</label>
+                <input type="text" id="last-name" name="last-name" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Leave us a message...</label>
+              <textarea id="message" name="message" rows="4"></textarea>
+            </div>
+            <button type="submit" class="cta-button form-submit-button">
+              Submit Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="team" class="team-section container">
+      <h2>Meet Our Development Team</h2>
+      <p>
+        Website CookConnect ini dikembangkan sebagai tugas mata kuliah
+        Pemrograman Web oleh tim kami.
+      </p>
+
+      <div class="team-member-grid">
+        <div class="team-member-card">
+          <img
+            src="src/anggota1.jpeg"
+            alt="Foto Anggota Tim 1"
+            class="member-photo"
+          />
+          <div class="member-card-content">
+            <h4>Nama Anggota 1</h4>
+            <p class="role">Project Manager / Frontend Lead</p>
+          </div>
+        </div>
+
+        <div class="team-member-card">
+          <img
+            src="src/anggota2.jpeg"
+            alt="Foto Anggota Tim 2"
+            class="member-photo"
+          />
+          <div class="member-card-content">
+            <h4>Nama Anggota 2</h4>
+            <p class="role">UI/UX</p>
+          </div>
+        </div>
+
+        <div class="team-member-card">
+          <img
+            src="src/anggota3.jpeg"
+            alt="Foto Anggota Tim 3"
+            class="member-photo"
+          />
+          <div class="member-card-content">
+            <h4>Nama Anggota 3</h4>
+            <p class="role">CSS</p>
+          </div>
+        </div>
+
+        <div class="team-member-card">
+          <img
+            src="src/anggota4.jpeg"
+            alt="Foto Anggota Tim 4"
+            class="member-photo"
+          />
+          <div class="member-card-content">
+            <h4>Nama Anggota 4</h4>
+            <p class="role">JavaScript</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 CookConnect. Developed for Web Programming Class.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

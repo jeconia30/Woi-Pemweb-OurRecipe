@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login / Register - CookConnect</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="auth.css" />
+  </head>
+  <body class="login-page-body">
+    <header class="login-header">
+      <div class="container">
+        <a href="index.html" class="logo-link"
+          ><div class="logo">CookConnect</div></a
+        >
+      </div>
+    </header>
+
+    <div class="login-container">
+      <form id="login-form" class="auth-form">
+        <div class="logo-auth">CookConnect</div>
+        <h2>Selamat Datang Kembali!</h2>
+
+        <div class="form-group">
+          <label for="login-email">Email/Username</label>
+          <input type="email" id="login-email" required />
+        </div>
+        <div class="form-group">
+          <label for="login-password">Password</label>
+          <div class="password-wrapper">
+            <input type="password" id="login-password" required />
+            <i
+              class="fas fa-eye-slash password-toggle-icon"
+              id="toggle-password"
+            ></i>
+          </div>
+        </div>
+        <div class="form-extra">
+          <a href="forgot-password.html" class="forgot-password"
+            >Lupa Password?</a
+          >
+        </div>
+
+        <a href="feed.html" class="cta-button auth-button">Login</a>
+
+        <div class="auth-divider">
+          <span>OR</span>
+        </div>
+
+        <a
+          href="https://accounts.google.com/"
+          target="_blank"
+          class="cta-button google-auth-button"
+        >
+          <i class="fab fa-google"></i> Login dengan Google
+        </a>
+
+        <p class="auth-toggle">
+          Belum punya akun? <a href="#" id="show-register">Daftar di sini</a>
+        </p>
+      </form>
+
+      <form id="register-form" class="auth-form hidden">
+        <div class="logo-auth">CookConnect</div>
+        <h2>Buat Akun Baru</h2>
+
+        <div class="form-group">
+          <label for="reg-name">Nama</label>
+          <input type="text" id="reg-name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="reg-email">Email</label>
+          <input type="email" id="reg-email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="reg-password">Password</label>
+          <div class="password-wrapper">
+            <input type="password" id="reg-password" required />
+            <i
+              class="fas fa-eye-slash password-toggle-icon"
+              id="toggle-reg-password"
+            ></i>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="reg-password-confirm">Konfirmasi Password</label>
+          <div class="password-wrapper">
+            <input type="password" id="reg-password-confirm" required />
+            <i
+              class="fas fa-eye-slash password-toggle-icon"
+              id="toggle-reg-confirm"
+            ></i>
+          </div>
+        </div>
+
+        <p class="auth-policy">
+          Dengan mendaftar, Anda menyetujui
+          <a href="terms.html#terms" target="_blank">Syarat & Ketentuan</a>
+          serta
+          <a href="terms.html#privacy" target="_blank">Kebijakan Privasi</a>
+          kami.
+        </p>
+
+        <a href="setup-profile.html" class="cta-button auth-button">Register</a>
+
+        <div class="auth-divider">
+          <span>OR</span>
+        </div>
+        <a
+          href="https://accounts.google.com/"
+          target="_blank"
+          class="cta-button google-auth-button"
+        >
+          <i class="fab fa-google"></i> Daftar dengan Google
+        </a>
+
+        <p class="auth-toggle">
+          Sudah punya akun? <a href="#" id="show-login">Login di sini</a>
+        </p>
+      </form>
+    </div>
+    <footer>
+      <p>&copy; 2025 CookConnect. Developed for Web Programming Class.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
